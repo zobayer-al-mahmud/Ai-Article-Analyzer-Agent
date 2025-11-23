@@ -2,10 +2,9 @@
 
 An automated article analysis system that extracts insights from web articles and delivers them to your email. Users submit an article URL through a beautiful web interface, and AI processes it in the background to generate summaries, key insights, and actionable information.
 
-## 🚀 Live Demo
+## 🚀 **Live Link** : https://ai-article-analyzer-agent.onrender.com/
 
-- **Frontend**: [https://ai-article-analyzer-agent-frontend.onrender.com](https://ai-article-analyzer-agent-frontend.onrender.com)
-- **Backend API**: [https://ai-article-analyzer-agent-backend.onrender.com](https://ai-article-analyzer-agent-backend.onrender.com)
+
 
 ## 📖 How It Works
 
@@ -284,7 +283,7 @@ You can import this workflow directly into your n8n instance:
 ## 🚀 Quick Start
 
 ### Option 1: Use the Live Website
-Just visit [https://ai-article-analyzer-agent-frontend.onrender.com](https://ai-article-analyzer-agent-frontend.onrender.com) and start analyzing articles!
+Just visit [[https://ai-article-analyzer-agent-frontend.onrender.com](https://ai-article-analyzer-agent-frontend.onrender.com)](https://ai-article-analyzer-agent.onrender.com/) and start analyzing articles!
 
 ### Option 2: Run Locally with Docker
 
@@ -332,17 +331,6 @@ Ai-Article-Analyzer-Agent/
 ├── render.yaml              # Render deployment config
 └── README.md
 ```
-
----
-
-## 👨‍💻 Developer
-
-**Zobayer Al Mahmud**
-- GitHub: [@zobayer-al-mahmud](https://github.com/zobayer-al-mahmud)
-
----
-
-**Built with ❤️ using FastAPI, modern web technologies, and Docker**
 
 
 ### Endpoint: `POST /submit`
@@ -490,13 +478,6 @@ curl -X POST http://localhost:8000/submit `
 
 ---
 
-## 📝 Environment Variables
-
-| Variable | Description | Example |
-|----------|-------------|---------|
-| N8N_WEBHOOK_URL | URL of the n8n webhook endpoint | https://your-n8n.com/webhook/article-analyzer |
-
----
 
 ## 🚀 Production Deployment
 
@@ -566,9 +547,6 @@ This project is open source and available under the MIT License.
 ## ‍💻 Developer
 
 **Zobayer Al Mahmud**
-- GitHub: [@zobayer-al-mahmud](https://github.com/zobayer-al-mahmud)
-
----
 
 ## 🙏 Acknowledgments
 
