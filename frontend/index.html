@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Analyzer</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <div class="icon-wrapper">
+                    <span class="icon">📰</span>
+                </div>
+                <h1>Article Analyzer</h1>
+                <p class="subtitle">Get AI-powered insights delivered to your inbox</p>
+            </div>
+
+            <form id="analyzerForm">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="your.email@example.com"
+                        required
+                    >
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="articleUrl">Article URL</label>
+                    <input 
+                        type="url" 
+                        id="articleUrl" 
+                        name="articleUrl" 
+                        placeholder="https://example.com/article"
+                        required
+                    >
+                    <span class="error-message" id="urlError"></span>
+                </div>
+
+                <button type="submit" id="submitBtn" class="submit-btn">
+                    <span class="btn-text">Analyze Article</span>
+                    <span class="loader" id="loader"></span>
+                </button>
+                
+                <!-- Loading bar (shows below button) -->
+                <div class="inline-loading-container" id="inlineLoading">
+                    <div class="inline-loading-bar"></div>
+                </div>
+            </form>
+
+            <div class="message-area" id="messageArea"></div>
+        </div>
+
+        <footer class="footer">
+            <p>© 2025 Developed by <a href="https://github.com/zobayer-al-mahmud" target="_blank" rel="noopener noreferrer">Zobayer Al Mahmud</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
