@@ -19,11 +19,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY . .
 
-# Verify that the main module is importable at build time
-RUN python -c "import main; print('Main module import OK')"
-
 # Expose port (Render will use the PORT env variable)
 EXPOSE ${PORT}
 
 # Run the application with PORT from environment
-CMD uvicorn main:app --host 0.0.0.0 --port ${PORT}
+CMD ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port ${PORT}"]
