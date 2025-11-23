@@ -7,16 +7,20 @@ WORKDIR /app
 # Set environment variables
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONPATH=/app \
     PORT=8000
 
-# Copy requirements first for better caching
-COPY requirements.txt .
+# Copy requirements first for better caching. Support both root-level and backend-level context.
+COPY requirements.txt ./
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
 COPY . .
+
+# Verify that the main module is importable at build time
+RUN python -c "import main; print('Main module import OK')"
 
 # Expose port (Render will use the PORT env variable)
 EXPOSE ${PORT}
