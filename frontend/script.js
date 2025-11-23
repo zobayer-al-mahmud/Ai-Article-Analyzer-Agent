@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:8000';
+const API_URL = 'https://ai-article-analyzer-agent-backend.onrender.com/';
 
 // DOM Elements
 const form = document.getElementById('analyzerForm');
