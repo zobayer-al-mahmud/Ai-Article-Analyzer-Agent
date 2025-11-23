@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: article-analyzer-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - N8N_WEBHOOK_URL=${N8N_WEBHOOK_URL}
+    env_file:
+      - ./backend/.env
+    restart: unless-stopped
+    networks:
+      - article-analyzer-network
+
+  frontend:
+    image: nginx:alpine
+    container_name: article-analyzer-frontend
+    ports:
+      - "3000:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html:ro
+    restart: unless-stopped
+    networks:
+      - article-analyzer-network
+    depends_on:
+      - backend
+
+networks:
+  article-analyzer-network:
+    driver: bridge
