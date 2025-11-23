@@ -42,44 +42,20 @@ article-analyzer/
 
 ## 🌐 Deploy to Render
 
-**Two Deployment Modes:**
+**Quick Deploy to Render.com (Free):**
 
-1. **Native Python Service (Recommended)** – Simpler, faster cold starts.
-2. **Docker Service** – Use only if you need system packages or custom OS tweaks.
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
 
-### Native Python Deployment (Recommended)
-1. Create Web Service → Connect this repo
-2. Root Directory: `backend`
-3. Environment: Python 3.11
-4. Build Command:
-   ```bash
-   pip install -r requirements.txt
-   ```
-5. Start Command:
-   ```bash
-   uvicorn main:app --host 0.0.0.0 --port $PORT
-   ```
-6. Add env var `N8N_WEBHOOK_URL` with your webhook URL.
-7. Deploy – health endpoint at `/` should return JSON status.
+Detailed deployment instructions: **[📖 DEPLOY.md](DEPLOY.md)**
 
-### Docker Deployment (Alternative)
-If you keep `backend/Dockerfile`:
-1. Service Type: Web (Docker)
-2. Dockerfile Path: `backend/Dockerfile`
-3. Docker Context: `backend`
-4. Env var: `N8N_WEBHOOK_URL=` your webhook URL.
-5. Do NOT set a Start Command (Docker CMD already defined).
+### Quick Steps:
+1. Fork this repository
+2. Sign up on [Render](https://render.com)
+3. Create new Blueprint and connect your repo
+4. Set `N8N_WEBHOOK_URL` environment variable
+5. Deploy! �
 
-### Common Import Error Fix
-If you see `Could not import module "main"` on Render:
-- Ensure you chose Native Python OR Docker, not both.
-- For native: Root Directory must be `backend` (not blank).
-- For Docker: `CMD uvicorn main:app ...` in Dockerfile; no Start Command in UI.
-- File name must be exactly `main.py` and contain `app = FastAPI()`.
-
-Detailed instructions: **[📖 DEPLOY.md](DEPLOY.md)**
-
-Backend will be available at: `https://<your-service>.onrender.com`
+Backend will be available at: `https://your-app.onrender.com`
 
 ---
 
@@ -342,7 +318,7 @@ curl -X POST http://localhost:8000/submit `
 
 ### Backend Issues
 - **Import errors**: Ensure all dependencies in `requirements.txt`
-- **Module 'main' not found on Render**: Use Native mode with `rootDir=backend` OR Docker with correct `Dockerfile` but not both.
+- **Import errors**: Ensure all dependencies in `requirements.txt`
 - **Webhook fails**: Verify n8n webhook URL in `.env` is correct and accessible
 
 ### Frontend Issues
