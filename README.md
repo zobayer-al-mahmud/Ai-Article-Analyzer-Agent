@@ -32,6 +32,9 @@ An automated article analysis system that extracts insights from web articles an
 
 ## 🔗 n8n Workflow
 
+<img width="1859" height="821" alt="image" src="https://github.com/user-attachments/assets/a554fe2c-2d2e-4ab6-89b5-a46879ade530" />
+
+
 The automation workflow is built in n8n and includes the following nodes:
 
 1. **Webhook** - Receives POST requests with email, article URL, and session ID
