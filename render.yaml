@@ -20,7 +20,7 @@ services:
   - type: static
     name: article-analyzer-frontend
     buildCommand: echo "No build needed"
-    staticPublishPath: ./frontend
+    staticPublishPath: ./frontend/build
     region: singapore
     branch: main
     routes:
