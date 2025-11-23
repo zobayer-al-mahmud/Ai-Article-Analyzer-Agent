@@ -1,9 +1,6 @@
-<img width="1859" height="821" alt="image" src="https://github.com/user-attachments/assets/de2c1da7-1d5b-424f-8328-4c11851fd586" /># 📰 AI Article Analyzer
-
 An automated article analysis system that extracts insights from web articles and delivers them to your email. Users submit an article URL through a beautiful web interface, and AI processes it in the background to generate summaries, key insights, and actionable information.
 
 ## 🚀 **Live Link** : https://ai-article-analyzer-agent.onrender.com/
-
 
 
 ## 📖 How It Works
