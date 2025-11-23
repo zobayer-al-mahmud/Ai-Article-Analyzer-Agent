@@ -1,4 +1,4 @@
-# 📰 AI Article Analyzer
+<img width="1859" height="821" alt="image" src="https://github.com/user-attachments/assets/de2c1da7-1d5b-424f-8328-4c11851fd586" /># 📰 AI Article Analyzer
 
 An automated article analysis system that extracts insights from web articles and delivers them to your email. Users submit an article URL through a beautiful web interface, and AI processes it in the background to generate summaries, key insights, and actionable information.
 
@@ -286,7 +286,7 @@ You can import this workflow directly into your n8n instance:
 ## 🚀 Quick Start
 
 ### Option 1: Use the Live Website
-Just visit [[https://ai-article-analyzer-agent-frontend.onrender.com](https://ai-article-analyzer-agent-frontend.onrender.com)](https://ai-article-analyzer-agent.onrender.com/) and start analyzing articles!
+Just visit https://ai-article-analyzer-agent.onrender.com/ and start analyzing articles!
 
 ### Option 2: Run Locally with Docker
 
