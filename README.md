@@ -1,6 +1,10 @@
 An automated article analysis system that extracts insights from web articles and delivers them to your email. Users submit an article URL through a beautiful web interface, and AI processes it in the background to generate summaries, key insights, and actionable information.
 
 ## 🚀 **Live Link** : https://ai-article-analyzer-agent.onrender.com/
+## **Demo Video** : https://drive.google.com/file/d/1cBWeCDHIJuwq-VIITEkXDHBxx94M5gzm/view?usp=sharing
+
+<img width="1917" height="991" alt="image" src="https://github.com/user-attachments/assets/bc85a689-ef31-409e-9fb7-2e583a162566" />
+
 
 
 ## 📖 How It Works
